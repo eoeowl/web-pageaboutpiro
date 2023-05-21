@@ -1,0 +1,135 @@
+.body {
+    margin:0 ;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+    background-color: rgb(18, 12, 41);
+
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left_side {
+background-color: rgba(6, 5, 5, 0.622);
+padding: 20px;
+text-align: center;
+}
+
+
+.right_side {
+background-color: rgba(6, 5, 5, 0.622);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+display: flex;
+align-items: center;
+color: rgb(249, 0, 0);
+
+}
+
+.logo{
+    width: 500;
+    border-radius: 50%;
+}
+
+.author {
+    color: rgb(249, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.itc-slider__item {
+    
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 7rem;
+  }
+
+  .itc-slider__item:nth-child(1) {
+    background-color: #f44336;
+  }
+
+  .itc-slider__item:nth-child(2) {
+    background-color: #9c27b0;
+  }
+
+  .itc-slider__item:nth-child(3) {
+    background-color: #3f51b5;
+  }
+
+  .itc-slider__item:nth-child(4) {
+    background-color: #03a9f4;
+  }
+
+  .itc-slider__item:nth-child(5) {
+    background-color: #4caf50;
+  }
+.slider_img {
+            width: 100%;
+}
+.footer{
+    background-color: rgb(255, 255, 255);
+
+}
+.footer_wrapper{
+    background-color: rgba(6, 5, 5, 0.622);
+    height: 100%;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social_logo {
+    width: 20%;
+}
+.social_buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+.container{
+    max-width: 100%;
+}
+    .main{
+        max-width: 100%;
+    }
+    .left_side, .right_side{
+        width: 50%;
+    }
+    .logo {
+        width: 90%;
+    }
+    .itc-slider__item {
+    
+        flex: 0 0 calc(100% / 2);
+        max-width: calc(100% / 2);
+}
+}
+
+@media (max-width: 700px) {
+    .main{
+        width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    }
+    .left_side, .right_side{
+        max-width: 100%;
+        padding: 0;
+        width: 100%;
+    }
+    .logo{
+        margin-top:5px ;
+        width: 70%;
+    }
+    .itc-slider__item {
+        flex: 0 0 calc(100% / 1);
+        max-width: calc(100% / 1);
+    }
+    
+}
